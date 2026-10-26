@@ -16,12 +16,41 @@ body {
 }
 
 header {
+  position: relative;
   text-align: center;
   padding: 20px 0;
   margin-bottom: 30px;
   background-color: #1a237e;
   color: white;
   border-radius: 5px;
+}
+
+#auth-container {
+  margin-top: 16px;
+}
+
+#user-info,
+#login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+#login-form {
+  margin: 12px auto 0;
+}
+
+#login-form input {
+  width: min(220px, 100%);
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#login-form label {
+  margin-left: 8px;
 }
 
 header h1 {
@@ -189,7 +218,7 @@ button:hover {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 footer {
